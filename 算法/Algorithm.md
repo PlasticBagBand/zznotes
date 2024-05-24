@@ -399,7 +399,7 @@ class UF {
 | 桶排序       | O(n + k)       | O(n)               | O(n^2)             | O(n + k)     | 稳定       |
 | 基数排序     | O(d * (n + k)) | O(d * (n + k))     | O(d * (n + k))     | O(n + k)     | 稳定       |
 
-![](Algorithmimages\sort.JPG)
+<img src = "Algorithmimages\sort.JPG">
 
 ### 快速排序（固定选择基准元素）
 
@@ -1323,7 +1323,7 @@ class Solution {
 
 我们假设快慢指针相遇时，慢指针 `slow` 走了 `k` 步，那么快指针 `fast` 一定走了 `2k` 步：
 
-![](Algorithmimages\1.jpg)
+<img src = "Algorithmimages\1.jpg">
 
 `fast` 一定比 `slow` 多走了 `k` 步，这多走的 `k` 步其实就是 `fast` 指针在环里转圈圈，所以 `k` 的值就是环长度的「整数倍」。
 
@@ -1331,7 +1331,7 @@ class Solution {
 
 巧的是，如果从相遇点继续前进 `k - m` 步，也恰好到达环起点。因为结合上图的 `fast` 指针，从相遇点开始走k步可以转回到相遇点，那走 `k - m` 步肯定就走到环起点了：
 
-![](Algorithmimages\2.jpg)
+<img src = "Algorithmimages\2.jpg">
 
 所以，只要我们把快慢指针中的任一个重新指向 `head`，然后两个指针同速前进，`k - m` 步后一定会相遇，相遇之处就是环的起点了。
 
@@ -1341,7 +1341,7 @@ class Solution {
 
 - 我们可以让 `p1` 遍历完链表 `A` 之后开始遍历链表 `B`，让 `p2` 遍历完链表 `B` 之后开始遍历链表 `A`，这样相当于「逻辑上」两条链表接在了一起。如果这样进行拼接，就可以让 `p1` 和 `p2` 同时进入公共部分，也就是同时到达相交节点 `c1`：
 
-![](Algorithmimages\3.jpg)
+<img src = "Algorithmimages\3.jpg">
 
 按照这个思路，可以写出如下代码：
 
@@ -1501,9 +1501,9 @@ ListNode reverseBetween(ListNode head, int m, int n) {
 
 
 
-![](Algorithmimages\4.jpg)
+<img src = "Algorithmimages\4.jpg">
 
-![](Algorithmimages\5.jpg)
+<img src = "Algorithmimages\5.jpg">
 
 ### 判断回文链表
 
@@ -1739,7 +1739,7 @@ public String longestPalindrome(String s) {
 
 以空格为分割符完成字符串分割后，若两单词间有 x>1x > 1x>1 个空格，则在单词列表 strsstrsstrs 中，此两单词间会多出 x−1x - 1x−1 个 “空单词” （即 "" ）。解决方法：倒序遍历单词列表，并将单词逐个添加至 StringBuilder ，遇到空单词时跳过。
 
-![](Algorithmimages\9.PNG)
+<img src = "Algorithmimages\9.PNG">
 
 ```java
 class Solution {
@@ -4750,7 +4750,7 @@ for 0 <= i < n:
 
 我们想求的最终答案是 `dp[n - 1][K][0]`，即最后一天，最多允许 `K` 次交易，最多获得多少利润。
 
-![](Algorithmimages\645645453.png)
+<img src = "Algorithmimages\645645453.png">
 
 通过这个图可以很清楚地看到，每种状态（0 和 1）是如何转移而来的。根据这个图，我们来写一下状态转移方程：
 
